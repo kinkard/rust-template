@@ -1,5 +1,11 @@
 # About
 
+Best with [cargo generate](https://github.com/cargo-generate/cargo-generate) and
+
+```sh
+cargo generate kinkard/rust-template --name my-new-awesome-project
+```
+
 ## Build & Run
 
 ```sh
