@@ -2,7 +2,7 @@
 name = "{{project-name}}"
 description = "{{project-name}}"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 authors = ["{{authors}}"]
 repository = "https://github.com/{{username}}/{{project-name}}"
 readme = "README.md"
