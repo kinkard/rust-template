@@ -1,12 +1,13 @@
 [package]
 name = "{{project-name}}"
-description = "{{project-name}}"
 version = "0.1.0"
 edition = "2024"
-authors = ["{{authors}}"]
-repository = "https://github.com/{{username}}/{{project-name}}"
+rust-version = "1.85"
+description = "{{project-name}}"
 readme = "README.md"
+repository = "https://github.com/{{username}}/{{project-name}}"
 license = "MIT OR Apache-2.0"
+include = ["**/*.rs"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
