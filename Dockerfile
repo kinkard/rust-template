@@ -1,4 +1,4 @@
-FROM rust:alpine as builder
+FROM rust:alpine AS builder
 
 # Dependencies for some crates if needed
 # RUN apk add --no-cache alpine-sdk cmake
@@ -16,6 +16,6 @@ COPY src ./src
 RUN touch -a -m ./src/main.rs
 RUN cargo build --release
 
-FROM alpine as runtime
+FROM alpine AS runtime
 COPY --from=builder /usr/src/app/target/release/{{project-name}} /usr/local/bin/{{project-name}}
 CMD ["{{project-name}}"]
